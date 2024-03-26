@@ -9,14 +9,14 @@ const userRoute = require("./api/routes/user");
 const app = express();
 dotenv.config();
 
-mongoose
-  .connect(process.env.MONGODB_URL)
-  .then(() => {
-    console.log("Connect to MongoDB successfully!!! ");
-  })
-  .catch((error) => {
-    console.log("Connect to MongoDB failure!!! ", error);
-  });
+// mongoose
+//   .connect(process.env.MONGODB_URL)
+//   .then(() => {
+//     console.log("Connect to MongoDB successfully!!! ");
+//   })
+//   .catch((error) => {
+//     console.log("Connect to MongoDB failure!!! ", error);
+//   });
 
 app.use(cors());
 app.use(cookieParser());
