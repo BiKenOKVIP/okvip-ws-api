@@ -6,13 +6,13 @@ const userSchema = new Schema(
     username: {
       type: String,
       required: true,
-      minLength: 6,
+      minLength: 1,
       unique: true,
     },
     password: {
       type: String,
       required: true,
-      minLength: 6,
+      minLength: 1,
     },
     isAdmin: {
       type: Boolean,

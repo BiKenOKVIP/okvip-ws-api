@@ -10,7 +10,7 @@ const app = express();
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGODB_CONNECT_URL)
+  .connect(process.env.MONGODB_URL)
   .then(() => {
     console.log("Connect to MongoDB successfully!!! ");
   })
